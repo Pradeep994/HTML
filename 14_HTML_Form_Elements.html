@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        h2{
+            font-size: 14px;
+        }
+        form{
+            background-color: lightblue;
+            padding: 15px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+        }
+    </style>
+</head>
+
+
+    <!-- Simple Login Form -->
+    <h2>Simple Login Form</h2>
+    <form>
+        <label for="user">UserName</label>
+        <input type="text" id="username">
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass">
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <!-- Login form with Table -->
+    <h2>Login Form with Table</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>UserName</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+                <td>
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <!-- Select box with Options -->
+    <h2>Select Box with Options</h2>
+    <form>
+        <label>select a languge</label>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVASCRIPT</option>
+            <option>AJAX</option>
+            <option>BOOTSTRAP</option>
+            <option>Angularjs</option>
+        </select>
+    </form>
+    <!-- select box with otpgroup-->
+    <h2>select box with optgroup</h2>
+    <form>
+        <label>select a language</label>
+        <select>
+        <optgroup label="Languages">
+            <option>java</option>
+            <option>python</option>
+            <option>php</option>
+        </optgroup>
+        <optgroup label="scripts">
+            <option>shell</option>
+            <option>javascript</option>
+        </optgroup>
+        </select>
+    </form>
+    <!-- Textarea box -->
+    <h2>Textarea box</h2>
+<form>
+    <label for="comments">Enter your message</label>
+    <textarea rows="5" cols="30" id="comments"></textarea>
+</form>
+
+    <!-- Datalist (HTML5) -->
+    <h2>Datalist (HTML5)</h2>
+<form>
+    <label for="technologies">Select a Technology</label>
+    <input list="technologies">
+    <datalist id="technologies">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>JQuery</option>
+        <option>AJAX</option>
+        <option>Bootstrap</option>
+        <option>Angular JS</option>
+    </datalist>
+    <input type="submit" value="submit">
+</form>
+
+
+<br><br><br>
+</body>
+</html>
